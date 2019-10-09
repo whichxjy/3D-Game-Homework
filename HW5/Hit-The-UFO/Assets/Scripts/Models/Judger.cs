@@ -17,7 +17,7 @@ public class Judger {
     public void AddScore(int score) {
         this.score += score;
         FirstController sceneController = Director.GetInstance().currentSceneController as FirstController;
-        sceneController.SetGUI(result, round, trial, score);
+        sceneController.SetGUI(this.result, this.round, this.trial, this.score);
     }
 
     public void SubScore(int score) {
