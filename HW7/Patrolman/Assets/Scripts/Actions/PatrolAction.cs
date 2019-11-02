@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class PatrolAction : MonoBehaviour {
-    private float smoothing = 4f;
+    private float smoothing = 2f;
     private Vector3 target;
     public Vector3 Target {
         get { return target; }
