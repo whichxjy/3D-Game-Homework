@@ -21,7 +21,7 @@ public class ParticleLauncher : MonoBehaviour {
 
     private void OnParticleCollision(GameObject other) {
         ParticlePhysicsExtensions.GetCollisionEvents(particleLauncher, other, collisionEvents);
-        // emit the splatter where the bullet collides with the wall or the floor
+        // display the decal and emit the splatter where the bullet collides with the wall or the floor
         foreach (ParticleCollisionEvent collisionEvent in collisionEvents) {
             decalPool.ParticleHit(collisionEvent, particleColorGradient);
             EmitSplatterAtLocation(collisionEvent);
