@@ -16,7 +16,7 @@ TagManager:
   - 
   - Lighting
   - Environment
-  - 
+  - Sub
   - 
   - 
   - 
@@ -41,4 +41,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Sub
+    uniqueID: 4116794273
     locked: 0
