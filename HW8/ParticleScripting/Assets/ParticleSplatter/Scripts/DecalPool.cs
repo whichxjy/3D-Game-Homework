@@ -12,7 +12,7 @@ public class DecalPool : MonoBehaviour {
 
     private void Start() {
         decalParticleSystem = GetComponent<ParticleSystem>();
-        for (int i = 0; i < maxDecalNum; i++) {
+        for (int i = 0; i < decalDatas.Length; i++) {
             decalDatas[i] = new DecalData();
         }
     }
