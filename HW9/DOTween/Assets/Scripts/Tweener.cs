@@ -1,5 +1,4 @@
-﻿using UnityEngine;
-using System;
+﻿using System;
 
 namespace MyDOTween {
     // TweenVT: type of value to tween

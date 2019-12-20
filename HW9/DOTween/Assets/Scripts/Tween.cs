@@ -1,7 +1,4 @@
-﻿using UnityEngine;
-using System;
-
-namespace MyDOTween {
+﻿namespace MyDOTween {
     // Tweener or Sequence
     public abstract class Tween : Sequentiable {
         // active or not?

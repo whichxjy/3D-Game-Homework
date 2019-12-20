@@ -2,7 +2,6 @@
 
 namespace MyDOTween {
     public class DOTweenComponent : MonoBehaviour {
-
         internal static void Create() {
             if (DOTween.instance == null) {
                 GameObject main = new GameObject("[DOTween]");

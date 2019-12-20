@@ -22,19 +22,11 @@ public class MarioController : MonoBehaviour, ITrackableEventHandler {
     private bool marioFound = false;
 
     void Start() {
-		marioBehaviour = imageTarget.GetComponent<TrackableBehaviour>();
-		if (marioBehaviour) {
-			marioBehaviour.RegisterTrackableEventHandler(this);
-		}
-
         marioRigidbody = GetComponent<Rigidbody>();  
 
         idleAnimation = GetComponent<Animation>();
         runAnimation = GetComponent<Animation>();
         jumpAnimation = GetComponent<Animation>();
-
-        // distance to ground
-        distToGround = ground.bounds.extents.y;
     }
 
     void FixedUpdate() {

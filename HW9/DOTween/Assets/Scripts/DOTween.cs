@@ -1,8 +1,7 @@
 ﻿using UnityEngine;
 
 namespace MyDOTween {
-    public class DOTween {
-
+    public static class DOTween {
         // main instance
         public static DOTweenComponent instance;
         

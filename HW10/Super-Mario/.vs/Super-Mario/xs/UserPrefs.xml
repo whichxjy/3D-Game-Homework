@@ -1,0 +1,27 @@
+﻿<Properties StartupConfiguration="{FB4FC0A7-8C4E-76C2-A4E5-F47D1C17C457}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/MarioController.cs">
+    <Files>
+      <File FileName="Assets/Scripts/MarioController.cs" Line="27" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Super-Mario" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="MarioController.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="73082985-9dea-4f32-8676-a9acdaa4e20f" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
