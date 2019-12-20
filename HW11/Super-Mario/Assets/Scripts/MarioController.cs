@@ -22,7 +22,7 @@ public class MarioController : MonoBehaviour {
         Stop();
     }
 
-    void Update() {
+    private void Update() {
         if (currentState == MarioState.Stop) {
             return;
         }
