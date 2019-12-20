@@ -1,3 +1,3 @@
-# HW10
+# Homework 10
 
 ![screenshot](screenshot.PNG)
