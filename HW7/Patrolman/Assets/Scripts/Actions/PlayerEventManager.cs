@@ -1,6 +1,4 @@
-﻿using UnityEngine;
-
-public class PlayerEventManager {
+﻿public class PlayerEventManager {
     // singleton instance
     private static PlayerEventManager instance;
 
@@ -16,8 +14,6 @@ public class PlayerEventManager {
     }
 
     public void Move(float verticalAxis, float horizontalAxis) {
-        if (OnMove != null) {
-            OnMove(verticalAxis, horizontalAxis);
-        }
+        OnMove?.Invoke(verticalAxis, horizontalAxis);
     }
 }

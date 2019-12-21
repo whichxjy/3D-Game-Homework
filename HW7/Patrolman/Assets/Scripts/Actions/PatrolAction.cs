@@ -13,7 +13,7 @@ public class PatrolAction : MonoBehaviour {
         }
     }
 
-    IEnumerator MoveTo(Vector3 other) {
+    private IEnumerator MoveTo(Vector3 other) {
         while (Vector3.Distance(transform.position, other) > 0.05f) {
             transform.position = Vector3.Lerp(transform.position, other, smoothing * Time.deltaTime);
             transform.LookAt(other);
