@@ -1,6 +1,4 @@
-﻿using UnityEngine;
-
-public enum GameResult {
+﻿public enum GameResult {
     Continuing,
     Lose
 }

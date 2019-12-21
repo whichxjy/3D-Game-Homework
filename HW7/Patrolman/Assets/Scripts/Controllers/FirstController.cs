@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using System.Collections.Generic;
 
 public class FirstController : MonoBehaviour, ISceneController, IUserAction {
     private GameObject player;

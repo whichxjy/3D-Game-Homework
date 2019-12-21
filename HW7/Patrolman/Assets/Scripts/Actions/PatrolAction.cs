@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class PatrolAction : MonoBehaviour {
-    private float smoothing = 2f;
+    private readonly float smoothing = 2f;
     private Vector3 target;
     public Vector3 Target {
         get { return target; }
@@ -13,9 +13,10 @@ public class PatrolAction : MonoBehaviour {
         }
     }
 
-    IEnumerator MoveTo(Vector3 target) {
-        while (Vector3.Distance(transform.position, target) > 0.05f) {
-            transform.position = Vector3.Lerp(transform.position, target, smoothing * Time.deltaTime);
+    IEnumerator MoveTo(Vector3 other) {
+        while (Vector3.Distance(transform.position, other) > 0.05f) {
+            transform.position = Vector3.Lerp(transform.position, other, smoothing * Time.deltaTime);
+            transform.LookAt(other);
             yield return null;
         }
         PatrolEventManager.GetInstance().Stop(gameObject);

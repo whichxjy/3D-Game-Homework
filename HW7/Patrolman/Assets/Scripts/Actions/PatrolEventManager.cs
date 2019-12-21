@@ -32,32 +32,22 @@ public class PatrolEventManager {
     }
 
     public void HitPlayer(GameObject patrol) {
-        if (OnHitPlayer != null) {
-            OnHitPlayer(patrol);
-        }
+        OnHitPlayer?.Invoke(patrol);
     }
 
     public void HitObstacle(GameObject patrol) {
-        if (OnHitObstacle != null) {
-            OnHitObstacle(patrol);
-        }
+        OnHitObstacle?.Invoke(patrol);
     }
 
     public void SeePlayer(GameObject patrol) {
-        if (OnSeePlayer != null) {
-            OnSeePlayer(patrol);
-        }
+        OnSeePlayer?.Invoke(patrol);
     }
 
     public void LosePlayer(GameObject patrol) {
-        if (OnLosePlayer != null) {
-            OnLosePlayer(patrol);
-        }
+        OnLosePlayer?.Invoke(patrol);
     }
 
     public void Stop(GameObject patrol) {
-        if (OnStop != null) {
-            OnStop(patrol);
-        }
+        OnStop?.Invoke(patrol);
     }
 }

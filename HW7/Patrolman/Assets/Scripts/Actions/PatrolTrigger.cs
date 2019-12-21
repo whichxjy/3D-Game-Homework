@@ -1,14 +1,14 @@
 ﻿using UnityEngine;
 
 public class PatrolTrigger : MonoBehaviour {
-    void OnTriggerEnter(Collider collider) {
-        if (collider.gameObject.tag == "Player") {
+    private void OnTriggerEnter(Collider other) {
+        if (other.gameObject.tag == "Player") {
             PatrolEventManager.GetInstance().SeePlayer(gameObject);
         }
     }
 
-    void OnTriggerExit(Collider collider) {
-        if (collider.gameObject.tag == "Player") {
+    private void OnTriggerExit(Collider other) {
+        if (other.gameObject.tag == "Player") {
             PatrolEventManager.GetInstance().LosePlayer(gameObject);
         }
     }
